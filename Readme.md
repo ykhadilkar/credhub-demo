@@ -19,6 +19,8 @@ cf push
 ```bash
 cf create-service credhub default my-credhub-secret -c '{"SECRET_CREDENTIAL":"yadayadadingdong"}'
 cf bind-service credhub-demo my-credhub-secret
+cf restage credhub-demo
+
 ```
 
 4. Test your app
